@@ -173,10 +173,12 @@ var keyData = {
     var circles = [];
 
     function onKeyDown(event) {
-        var newPoint = new Path.Circle(new Point(Math.floor(Math.random() * view.size.width), Math.floor(Math.random() * view.size.height)), 100);
-        newPoint.fillColor = keyData[event.key].color;
-        keyData[event.key].sound.play();
-        circles.push(newPoint);
+        if (keyData[event.key]){
+            var newPoint = new Path.Circle(new Point(Math.floor(Math.random() * view.size.width), Math.floor(Math.random() * view.size.height)), 500);
+            newPoint.fillColor = keyData[event.key].color;
+            keyData[event.key].sound.play();
+            circles.push(newPoint);
+        }
     }
 
     function onFrame(event) {
