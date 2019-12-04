@@ -1,4 +1,4 @@
-`https://archivaldi.github.io/Sound-Toy/`
+[https://archivaldi.github.io/Sound-Toy/](https://archivaldi.github.io/Sound-Toy/)
 
 # Sound-Toy
 
